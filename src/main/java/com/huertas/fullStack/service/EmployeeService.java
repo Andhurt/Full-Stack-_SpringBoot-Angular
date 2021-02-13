@@ -1,6 +1,7 @@
-package com.huertas.fullStack.Service;
+package com.huertas.fullStack.service;
 
-import com.huertas.fullStack.Repository.EmployeeRepository;
+import com.huertas.fullStack.exception.UserNotFoundException;
+import com.huertas.fullStack.repository.EmployeeRepository;
 import com.huertas.fullStack.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

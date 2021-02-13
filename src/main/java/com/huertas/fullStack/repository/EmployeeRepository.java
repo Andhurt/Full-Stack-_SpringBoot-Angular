@@ -1,4 +1,4 @@
-package com.huertas.fullStack.Repository;
+package com.huertas.fullStack.repository;
 
 import com.huertas.fullStack.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -8,5 +8,5 @@ import java.util.Optional;
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     void deleteEmployeeById(Long idEmployee);
 
-    Optional findEmployeeById(Long id);
+    Optional<Employee> findEmployeeById(Long id);
 }
